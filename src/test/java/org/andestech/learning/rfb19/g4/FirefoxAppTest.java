@@ -55,9 +55,7 @@ public class FirefoxAppTest
     @Test
     public void site01Test() throws InterruptedException
     {
-        webDriver.get("http://google.ru");
-        assertTrue( true );
-       // Thread.sleep(3000);
+        Utils.searchTest(webDriver);
 
     }
 

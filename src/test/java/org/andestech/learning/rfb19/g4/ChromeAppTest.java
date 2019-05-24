@@ -1,7 +1,9 @@
 package org.andestech.learning.rfb19.g4;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
@@ -37,9 +39,13 @@ public class ChromeAppTest
     @Test
     public void site01Test() throws InterruptedException
     {
-        webDriver.get("http://google.com");
+       Utils.searchTest(webDriver);
+
+
+        // webDriver.findElement(By.name("btnK")).click();
+
         assertTrue( true );
-       // Thread.sleep(3000);
+        Thread.sleep(3000);
 
     }
 

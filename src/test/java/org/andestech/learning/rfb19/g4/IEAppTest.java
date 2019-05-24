@@ -47,8 +47,9 @@ public class IEAppTest
     @Test
     public void site01Test() throws InterruptedException
     {
-        webDriver.get("http://google.ru");
-        assertTrue( true );
+//        webDriver.get("http://google.ru");
+//        assertTrue( true );
+        Utils.searchTest(webDriver);
        // Thread.sleep(3000);
 
     }
